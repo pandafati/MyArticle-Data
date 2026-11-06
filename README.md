@@ -2,7 +2,7 @@
 ## Project Phases
 
 | Phase | Description | 
-|---|---|---|
+|---|---|
 | I | Data collection and preprocessing | 
 | II | Aspect extraction and labeling | 
 | III | Generic and aspect-based summarization (3,000 human-written summaries) |
@@ -35,8 +35,7 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 
 
 | Property | Details |
-|---|---|---|
-
+|---|---|
 | Articles | 14,020 |
 
 | Attributes per article | 27 (metadata and content) |
@@ -52,8 +51,7 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 
 
 | Field | Description |
-|---|---|---|
-
+|---|---|
 | `\_id` | Unique identifier |
 
 | `title` | Article headline |
@@ -76,7 +74,7 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 
 
 
-\# Phase II: Preprocessing Pipeline
+# Phase II: Preprocessing Pipeline
 
 Implemented in Python using \*\*NLTK\*\* and the \*\*`re`\*\* library.
 

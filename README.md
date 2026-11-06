@@ -1,24 +1,24 @@
 # MyArticle-Data
+## Project Phases
 
-Steel Industry News Dataset (SteelOrbis, 2022-2024)
+| Phase | Description | Folder |
+|---|---|---|
+| I | Data collection and preprocessing | `phase1_data_collection/` |
+| II | Aspect extraction and labeling | `phase2_aspect_labeling/` |
+| III | Generic and aspect-based summarization (3,000 human-written summaries) | `phase3_summarization/` |
 
 
+# Phase I: Steel Industry News Dataset (SteelOrbis, 2022-2024)
 
 A corpus of \*\*14,020 English-language steel industry news articles\*\* collected from SteelOrbis between \*\*January 2022 and September 2024\*\*, together with the preprocessing pipeline used to prepare it for natural language processing (NLP) and machine learning.
 
-
-
 \## Overview
-
-
 
 This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of an NLP framework for analyzing steel market news. It documents how the data were collected, what the dataset contains, and how raw text was cleaned and transformed.
 
 
 
 \## Data Source
-
-
 
 \- \*\*Source:\*\* \[SteelOrbis](https://www.steelorbis.com), a global steel industry news platform established in 2002.
 
@@ -31,14 +31,11 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 \- \*\*Compliance:\*\* articles were collected from publicly accessible pages in accordance with the site's terms of use.
 
 
-
 \## Dataset Description
-
 
 
 | Property | Details |
 
-|---|---|
 
 | Articles | 14,020 |
 
@@ -56,7 +53,6 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 
 | Field | Description |
 
-|---|---|
 
 | `\_id` | Unique identifier |
 
@@ -72,8 +68,6 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 
 \## Data Collection
 
-
-
 \- A \*\*custom JavaScript web crawler\*\* systematically traversed SteelOrbis pages and extracted structured data, going beyond traditional scraping, which is limited to specific page elements.
 
 \- Data were stored in a \*\*MongoDB\*\* NoSQL database, chosen for efficient handling of unstructured data, high-speed read/write operations, and effective indexing and querying.
@@ -82,13 +76,9 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 
 
 
-\## Preprocessing Pipeline
-
-
+\## Phase II: Preprocessing Pipeline
 
 Implemented in Python using \*\*NLTK\*\* and the \*\*`re`\*\* library.
-
-
 
 1\. \*\*Data cleaning:\*\* removal of duplicates, special characters, hyperlinks, hashtags, irrelevant symbols, and a custom stopword list.
 
@@ -100,11 +90,7 @@ Implemented in Python using \*\*NLTK\*\* and the \*\*`re`\*\* library.
 
 \*\*Stemmer choice:\*\* the \*\*Porter Stemmer\*\* was selected after comparison with Snowball, Lancaster, and FastText on a corpus sample. The alternatives either truncated domain terms excessively, losing their meaning, or left inflected forms largely unchanged.
 
-
-
 The result is a clean, semantically meaningful corpus ready for machine learning workflows.
-
-
 
 \## Tools and Technologies
 
@@ -112,11 +98,13 @@ The result is a clean, semantically meaningful corpus ready for machine learning
 
 JavaScript (crawler) · MongoDB · Python · NLTK · Regular expressions
 
-
-
 \## Next Step
 
-
-
 The following phase covers extracting and labeling key aspects of steel news.
+
+# Phase III: Human-Written Summaries and Aspect-Based Summarization
+
+A set of **3,000 steel industry news articles with human-written reference summaries**, used to fine-tune and evaluate generic and aspect-conditioned summarization models.
+
+
 

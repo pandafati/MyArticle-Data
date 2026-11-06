@@ -37,11 +37,8 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 | Property | Details |
 |---|---|
 | Articles | 14,020 |
-
 | Attributes per article | 27 (metadata and content) |
-
 | Time span | January 2022 to September 2024 |
-
 | Language | English |
 
 
@@ -53,15 +50,10 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 | Field | Description |
 |---|---|
 | `\_id` | Unique identifier |
-
 | `title` | Article headline |
-
 | `date` | Publication timestamp |
-
 | `location` | Geographic reference |
-
 | `content` | Full article text |
-
 
 
 \## Data Collection

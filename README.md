@@ -49,7 +49,7 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 
 | Field | Description |
 |---|---|
-| `\_id` | Unique identifier |
+| `id` | Unique identifier |
 | `title` | Article headline |
 | `date` | Publication timestamp |
 | `location` | Geographic reference |

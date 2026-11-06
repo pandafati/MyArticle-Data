@@ -1,11 +1,11 @@
 # MyArticle-Data
 ## Project Phases
 
-| Phase | Description | Folder |
+| Phase | Description | 
 |---|---|---|
-| I | Data collection and preprocessing | `phase1_data_collection/` |
-| II | Aspect extraction and labeling | `phase2_aspect_labeling/` |
-| III | Generic and aspect-based summarization (3,000 human-written summaries) | `phase3_summarization/` |
+| I | Data collection and preprocessing | 
+| II | Aspect extraction and labeling | 
+| III | Generic and aspect-based summarization (3,000 human-written summaries) |
 
 
 # Phase I: Steel Industry News Dataset (SteelOrbis, 2022-2024)
@@ -35,7 +35,7 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 
 
 | Property | Details |
-
+|---|---|---|
 
 | Articles | 14,020 |
 
@@ -52,7 +52,7 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 
 
 | Field | Description |
-
+|---|---|---|
 
 | `\_id` | Unique identifier |
 
@@ -76,7 +76,7 @@ This repository supports \*\*Phase I (Data Collection and Preprocessing)\*\* of 
 
 
 
-\## Phase II: Preprocessing Pipeline
+\# Phase II: Preprocessing Pipeline
 
 Implemented in Python using \*\*NLTK\*\* and the \*\*`re`\*\* library.
 
